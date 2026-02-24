@@ -1,11 +1,13 @@
-
 <?php 
 
-class Product {}
+require('creating_classes.php');
+?>
+<?php 
+$names = new Product();
 
-$product1 = new Product();
-$product2 = new Product();
+$first_name = $names -> fname;
+$last_name = $names -> lname;
 
-var_dump($product1);
+echo($first_name . ' '. $last_name);
 
 ?>
